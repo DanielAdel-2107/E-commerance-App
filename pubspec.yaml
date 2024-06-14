@@ -46,7 +46,12 @@ dev_dependencies:
     sdk: flutter
   flutter_launcher_icons: ^0.13.1
   very_good_analysis: ^5.1.0
-
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/icons/icons/app_icon.jpg"
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/images/icons/icons/play_store_512.png"
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 # The following section is specific to Flutter packages.
