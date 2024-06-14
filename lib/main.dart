@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
     return ValueListenableBuilder(
       valueListenable: ConnectivityController.instance.isConnected,
       builder: (context, value, child) {
-        if (value) {
+        if (value == false) {
           return MaterialApp(
             builder: (context, child) {
               ConnectivityController.instance.init();
