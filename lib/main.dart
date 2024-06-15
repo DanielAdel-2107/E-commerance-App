@@ -1,6 +1,7 @@
 import 'package:e_commerance_app/core/app/connectivity_controller.dart';
 import 'package:e_commerance_app/core/app/env.variable.dart';
 import 'package:e_commerance_app/core/common/screens/no_network_screen.dart';
+import 'package:e_commerance_app/core/routes/app_routes.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -36,11 +37,8 @@ class MyApp extends StatelessWidget {
                   ConnectivityController.instance.init();
                   return child!;
                 },
-                home: Scaffold(
-                  appBar: AppBar(
-                    title: const Text('data'),
-                  ),
-                ),
+                onGenerateRoute: AppRoutes.onGenerateRoute,
+                initialRoute: AppRoutes.testOne,
               );
             },
           );
