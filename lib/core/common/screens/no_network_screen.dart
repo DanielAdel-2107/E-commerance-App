@@ -1,4 +1,4 @@
-import 'package:e_commerance_app/core/app/style/images/app_images.dart';
+import 'package:e_commerance_app/core/style/images/app_images.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
